@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculate some shit over here</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+      <div class="header">Calculator</div>
+      <div class="centered">
+      <div class="calculator">
+        <div id="display" class="display">0</div>
+
+
+      <div class="allButtons">
+      <div class = "topRow">
+      <button class="topRow" onclick="clearValue();">Clear</button>
+      <button class="topRow" onclick="deleteValue();">Delete</button>
+      <!-- <button class="topRow" onclick="alert('BUTTON');">Delete</button> -->
+    </div>
+    <div class="buttonNumberContainer">
+      <button class="buttonNumber" onclick="displayText('1')">1</button>
+      <button class="buttonNumber" onclick="displayText('2')">2</button>
+      <button class="buttonNumber" onclick="displayText('3')">3</button>
+      <button class="buttonNumber" onclick="displayText('4')">4</button>
+      <button class="buttonNumber" onclick="displayText('5')">5</button>
+      <button class="buttonNumber" onclick="displayText('6')">6</button>
+      <button class="buttonNumber" onclick="displayText('7')">7</button>
+      <button class="buttonNumber" onclick="displayText('8')">8</button>
+      <button class="buttonNumber" onclick="displayText('9')">9</button>
+      <button id="decimal" class="buttonNumber" onclick="displayText('.')">.</button>
+      <button class="buttonNumber" onclick="displayText('0')">0</button>
+      <button id ="equals" class="equals" onclick="equalsButt()">=</button>
+    </div>
+    <div class="operatorContainer">
+      <button class="operator" onclick="displayOperator('/')">/</button>
+      <button class="operator" onclick="displayOperator('*')">x</button>
+      <button class="operator" onclick="displayOperator('-')">-</button>
+      <button class="operator" onclick="displayOperator('+')">+</button>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="calculator.js"></script>  
+</body>
+</html>

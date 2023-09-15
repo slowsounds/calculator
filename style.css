@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .container div {
+    /* padding: 15px; */
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* color: white; */
+  }
+  
+  .header {
+    background-color: #22ffa3;
+    grid-column: 1;
+    border-radius: 15px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .display {
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: white;
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+  }
+
+  .calculator {
+    border: 2px solid;
+    border-radius: 15px;
+    background: rgb(207, 207, 207);
+    max-width: 360px;
+    justify-content: center;
+    /* display: flex; */
+  }
+
+.inputForm {
+    flex: 1.5 100%;
+    justify-content: center;
+}
+
+.topRow {
+    flex: 1 100%;
+    margin: 0px 0px 5px 0px;
+    border-radius: 15px;
+    /* justify-content: center;
+    align-items: center; */
+}
+  .allButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+    /* max-width: 250px; */
+  }
+  
+  .buttonNumberContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    max-width: 160px;
+    max-height: 320px;
+    padding: 0px;
+  }
+
+  .operatorContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40px;
+    max-height: 320px;
+    padding: 0px;
+  }
+
+  .buttonNumber {
+    flex: 1 0 25%; /* explanation below */
+    margin: 5px;
+    /* height: 100px; */
+    min-height: 65px;
+    background-color: #ff19ec;
+    border-radius: 15px;
+    /* background-color: #FF7755;
+    display: inline-block;
+    margin: 10px 0 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 100px;
+    width: calc(100% * (1/4) - 10px - 1px); */
+  }
+
+  .equals {
+    flex: 1 0 25%; /* explanation below */
+    margin: 5px;
+    /* height: 100px; */
+    min-height: 65px;
+    background-color: #ff19ec;
+    border-radius: 15px;
+  }
+  
+  .operator {
+    flex: 1 0 100%; /* explanation below */
+    margin: 5px;
+    /* height: 100px; */
+    background-color: #00DDFF;
+    border-radius: 15px;
+  }
+  
+  /* .article {
+    background-color: #bccbde;
+  }
+  
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+  
+  .footer {
+    background-color: #393f4d;
+    grid-column: 1 / 3;
+  } */
+  

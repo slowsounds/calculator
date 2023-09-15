@@ -1,0 +1,74 @@
+let tempArray = []
+let holdingArray = []
+let finalArray = []
+
+
+function displayText(num1){
+  let newValue = document.getElementById("display").innerText = num1;
+  tempArray.push(newValue);
+  finalValue1 = tempArray.join("");
+  holdingArray = tempArray.join("");
+  document.getElementById("display").innerText = finalValue1;
+  console.log("first number. tempArray : " + tempArray);
+  console.log("first number. holdingArray : " + holdingArray);
+  return holdingArray;
+}
+
+function displayOperator (op) {
+  document.getElementById("display").innerText = op;
+  console.log("holdingArray : " + holdingArray);
+  finalArray.push(holdingArray);
+  finalArray.push(op);
+  console.log("finalArray : " + finalArray);
+  clearTemp();
+}
+
+function clearTemp(){
+  return tempArray = [];
+}
+
+function equalsButt(){
+  document.getElementById("display").innerText = "=";
+  finalArray.push(holdingArray);
+  console.log("finalArray : " + finalArray);
+  for (let i = 0; i < finalArray.length; i+=3){
+    console.log("for loop " + finalArray[i], finalArray[i+1], finalArray[i+2]);
+    let result = finalCalc(finalArray[i], finalArray[i+1], finalArray[i+2]);
+    document.getElementById("display").innerText = result;
+  } 
+}
+
+function finalCalc(num1, op, num2){
+  if (op == "+") {
+    result = add(num1, num2);
+    return result;
+  }
+  if (op == "-"){
+    result = subtract(num1, num2);
+    return result;
+  }
+  if (op == "*"){
+    result = multiply(num1, num2);
+    return result;
+  }
+  if (op == "/"){
+    result = divide(num1, num2);
+    return result;
+  }
+  }
+
+  const add = function(a,b) {
+    return parseFloat(a)+parseFloat(b);
+  };
+  
+  const subtract = function(a,b) {
+    return parseFloat(a).toPrecision(15)-parseFloat(b).toPrecision(15);
+  };
+  
+  const multiply = function(a,b) {
+    return parseFloat(a).toPrecision(15)*parseFloat(b).toPrecision(15);
+  };
+  
+  const divide = function(a,b) {
+    return parseFloat(a).toPrecision(15)/parseFloat(b).toPrecision(15);
+  };
